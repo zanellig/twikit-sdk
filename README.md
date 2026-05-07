@@ -1,4 +1,4 @@
-# twikit-sdk
+# twikit-sdk (WIP)
 
 Clean-room TypeScript SDK foundation inspired by Python [`d60/twikit`](https://github.com/d60/twikit). Python twikit is a behavioral reference for protocol behavior; this package does not depend on Python and does not copy Python source.
 
