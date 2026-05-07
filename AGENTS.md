@@ -21,3 +21,5 @@ Skill definitions live in `.agents/skills/`. When the user invokes a skill by na
 ### Reference checkout
 
 The original Python twikit repo may be cloned at `.reference/twikit/`. It is ignored by git and is for behavioral reference only; do not copy source from it.
+
+Inspect the original implementation to match behavior for robustness and correctness, while keeping our interface faithful to our API-SKETCH and PRD specs.
