@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises"
+import { chmod, mkdir, readFile, writeFile } from "node:fs/promises"
 import { dirname } from "node:path"
 
 import type { SessionSnapshot, SessionStore } from "./session/types.js"
@@ -37,6 +37,7 @@ export class FileSession implements SessionStore {
       encoding: "utf8",
       mode: 0o600,
     })
+    await chmod(this.path, 0o600)
   }
 }
 
