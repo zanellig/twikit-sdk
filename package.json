@@ -1,13 +1,49 @@
 {
   "name": "twikit-sdk",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.2",
+  "description": "Clean-room TypeScript SDK foundation inspired by Python twikit.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.31.0"
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm build && vitest run",
+    "prepack": "pnpm build"
+  },
+  "keywords": [
+    "twikit",
+    "twitter",
+    "x",
+    "sdk",
+    "typescript"
+  ],
+  "author": {
+    "name": "Gonzalo Zanelli",
+    "email": "gonzalozanelli1@gmail.com",
+    "url": "https://zanelli.vercel.app/"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.31.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
 }
