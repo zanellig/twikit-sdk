@@ -1,11 +1,23 @@
 {
   "version": 1,
   "skills": {
+    "bump": {
+      "source": "zanellig/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/bump/SKILL.md",
+      "computedHash": "3a9a365820463da16d65f6ba1820a5f8324fd0ac60fb1cb34499871dc06430f4"
+    },
     "caveman": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "skillPath": "skills/productivity/caveman/SKILL.md",
       "computedHash": "934433479903febc585bf6deb5f0cebc63137e3f86b7babe0aab1ecb94d6d7a4"
+    },
+    "commit": {
+      "source": "zanellig/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/commit/SKILL.md",
+      "computedHash": "630f74d8228a1c366b36968e970fb9f6f01dd0e191a6d170d138492533940875"
     },
     "diagnose": {
       "source": "mattpocock/skills",
