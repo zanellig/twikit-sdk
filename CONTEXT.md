@@ -4,10 +4,13 @@ This repo is for `twikit-sdk`: a clean-room TypeScript SDK inspired by Python `d
 
 Python twikit is a behavioral reference, not a runtime dependency and not a literal source port. The TypeScript SDK should preserve the useful protocol primitives while avoiding Python twikit's active-record style public API.
 
+A local checkout of the original Python project may exist at `.reference/twikit/`. That directory is gitignored and must be used only as a behavioral reference for API surface, protocol behavior, fixtures, and edge cases. Do not copy source, comments, or tests from it into this SDK.
+
 ## Core Vocabulary
 
 - **Clean-room SDK**: A TypeScript implementation with no Python runtime, no copied Python source, and behavior informed by Python twikit.
 - **Behavioral reference**: Python twikit is used to understand X protocol behavior, response shapes, and edge cases.
+- **Reference checkout**: The ignored local `.reference/twikit/` clone of `d60/twikit`, used for inspection only.
 - **Domain service**: A public client namespace that owns behavior, such as `client.users`, `client.tweets`, `client.search`, `client.media`, and `client.session`.
 - **Passive DTO**: A returned data object with normalized fields and no hidden client reference or active methods.
 - **Active page**: A pagination object with `items`, cursors, and `next()`/`previous()` helpers. Pages may be active because they represent request continuations.
@@ -77,3 +80,4 @@ Session files contain live auth cookies and must be treated as secrets. They sho
 - PRD: `.scratch/typescript-sdk-foundation/PRD.md`
 - API sketch: `.scratch/typescript-sdk-foundation/API-SKETCH.md`
 - Implementation issues: `.scratch/typescript-sdk-foundation/issues/`
+- Python twikit reference checkout: `reference/twikit/` when present, ignored by git.
