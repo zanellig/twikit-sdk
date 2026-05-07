@@ -1,6 +1,6 @@
 {
   "name": "twikit-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Clean-room TypeScript SDK foundation inspired by Python twikit.",
   "type": "module",
   "exports": {
