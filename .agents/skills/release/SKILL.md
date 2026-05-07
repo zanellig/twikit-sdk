@@ -23,6 +23,6 @@ This repo publishes to npm when a GitHub Release is created for a tag named `vX.
 - validates semver
 - runs `npm version X.Y.Z --no-git-tag-version --allow-same-version`
 - runs `pnpm typecheck` and `pnpm test`
-- publishes to npm with provenance using `secrets.NPM_TOKEN`
+- publishes to npm through Trusted Publishing
 
-The workflow requires the GitHub secret `NPM_TOKEN`.
+The workflow uses GitHub OIDC and does not require an npm token. It requires npm Trusted Publisher configuration for this repo and workflow.
