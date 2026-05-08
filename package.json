@@ -29,7 +29,21 @@
     "twitter",
     "x",
     "sdk",
-    "typescript"
+    "typescript",
+    "search",
+    "bot",
+    "client",
+    "wrapper",
+    "twitter-bot",
+    "scraper",
+    "twitter-api",
+    "scraping",
+    "twitter-client",
+    "scrape",
+    "x-api",
+    "x twitter-scraper",
+    "x-api",
+    "twitter-internal-api"
   ],
   "author": {
     "name": "Gonzalo Zanelli",
